@@ -1,0 +1,44 @@
+body{
+    background-image: url("background.jpg");
+}
+#map{
+    border-radius: 9px;
+    height: 500px;
+    width: 50%;
+}
+#pano{
+    border-radius: 9px;
+    height: 500px;
+    width: 500px;
+}
+.myForm{
+    text-align: center;
+    color: white;
+}
+.radio{
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#walk{
+    width: 40px;
+}
+#car{
+    width: 40px;
+}
+.labels {
+    color: white;
+    background-color: black;
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    font-size: medium;
+    text-align: center;
+    width: 80px;
+    border-radius: 20px;
+}
+#msg{
+    display: none;
+    background-color: white;
+    color: black;
+    border: solid;
+    font-size: large;
+}

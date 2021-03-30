@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sk" onload="initMap()">
+<head>
+  <meta charset="utf-8">
+
+  <title>Výpočet trasy</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://unpkg.com/@googlemaps/markerwithlabel/dist/index.min.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgsfJOEYz4fq8JlKbgBEFzZn3nm_VKmfs&callback=initMap"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row justify-content-center mt-4">
+      <div class="myForm">
+        
+        
+        <div class="form-group">
+          <h1>Zadaj odkiaľ ideš do školy</h1>
+          <input type="text" class="form-control name="startPoint" id="startPoint">
+        </div>
+
+
+        <div class="form-check">
+          <div class="row justify-content-center mb-4">
+            <div id="floating-panel">
+              <h5>Zvoľ si či ideš pešo alebo autom</h5>
+              <select class="form-control selcls" id="mode">
+                <option value="DRIVING">Auto</option>
+                <option value="WALKING">Pešo</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <button type="button" id="myButton" class="btn btn-white btn-lg" >Vypočítaj cestu</button>
+
+        <p class="mt-4" id="msg"></p>
+       
+
+      </div>
+      
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+       <div id="map" class="col mr-4"></div>
+       <div id="pano" class="col ml-4"></div>
+    </div>
+  </div>
+</body>
+</html>
